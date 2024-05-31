@@ -54,9 +54,9 @@
 	<div class='container-fluid' style='list-style:none;color:white;width:100%;margin-top:4%;padding-bottom:1%'>
 	<hr style='background-color:white;height:px'></hr>
 		<small style='text-align:center;'>
-			<li>Copyright &copy; 2018 BUSTICKET Bangladesh<li>
-			<li>Developer: <a style="color:white;"href="https://www.facebook.com/NurAlam.x39">Nur Alam</a>
-			Dept.of CSE,BSMRSTU,Gopalganj</li>
+			<li>Copyright &copy; 2024 BUSTICKET addis abeba<li>
+			<li>Developer: <a style="color:white;>group 8</a>
+			Dept.of CS</li>
 		</small>
 	</div>
 </div>
