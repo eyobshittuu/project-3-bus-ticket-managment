@@ -1,4 +1,9 @@
-<?php require_once "controllerUserData.php"; ?>
+<?php require_once "controllerUserData.php";
+if (isset($_POST['login'])) {
+    $email = $_POST['email'];
+    setcookie('user_email', $email, time() + (86400 * 30), "/");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
