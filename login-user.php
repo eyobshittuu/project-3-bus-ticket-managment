@@ -47,6 +47,37 @@ if (isset($_POST['login'])) {
             </div>
         </div>
     </div>
+    <script>
+        $(document).ready(function() {
+            $('#login-form').submit(function(event) {
+                event.preventDefault();
+                var email = $('#email').val();
+                var password = $('#password').val();
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'login-user.php',
+                    data: {
+                        email: email,
+                        password: password
+                    },
+                    success: function(response) {
+                        if (response.success) {
+                            // Redirect or perform other actions on successful login
+                            window.location.href = 'dashboard.php';
+                        } else {
+                            // Display the error message
+                            $('#login-errors').html(response.message).show();
+                        }
+                    },
+                    error: function() {
+                        // Handle any errors that occur during the AJAX request
+                        $('#login-errors').html('An error occurred. Please try again.').show();
+                    }
+                });
+            });
+        });
+    </script>
     
 </body>
 </html>
