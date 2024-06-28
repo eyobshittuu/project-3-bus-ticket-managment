@@ -1,4 +1,4 @@
-<?php require_once "controllerUserData.php";
+<?php require_once "/php/controllerUserData.php";
 if (isset($_POST['login'])) {
     $email = $_POST['email'];
     setcookie('user_email', $email, time() + (86400 * 30), "/");
@@ -10,7 +10,7 @@ if (isset($_POST['login'])) {
     <meta charset="UTF-8">
     <title>Login Form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/php/style.css">
 </head>
 <body>
     <div class="container">
@@ -56,7 +56,7 @@ if (isset($_POST['login'])) {
 
                 $.ajax({
                     type: 'POST',
-                    url: 'login-user.php',
+                    url: '/login-user.php',
                     data: {
                         email: email,
                         password: password

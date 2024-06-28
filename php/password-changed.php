@@ -1,4 +1,4 @@
-<?php require_once "controllerUserData.php"; ?>
+<?php require_once "/php/controllerUserData.php"; ?>
 <?php
 if($_SESSION['info'] == false){
     header('Location: login-user.php');  
@@ -25,7 +25,7 @@ if($_SESSION['info'] == false){
                 <?php
             }
             ?>
-                <form action="login-user.php" method="POST">
+                <form action="/login-user.php" method="POST">
                     <div class="form-group">
                         <input class="form-control button" type="submit" name="login-now" value="Login Now">
                     </div>

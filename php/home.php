@@ -1,4 +1,4 @@
-<?php require_once "controllerUserData.php"; ?>
+<?php require_once "/php/controllerUserData.php"; ?>
 <?php 
 $email = $_SESSION['email'];
 $password = $_SESSION['password'];
@@ -62,7 +62,7 @@ if($email != false && $password != false){
 <body>
     <nav class="navbar">
     <a class="navbar-brand" href="#">Brand name</a>
-    <button type="button" class="btn btn-light"><a href="logout-user.php">Logout</a></button>
+    <button type="button" class="btn btn-light"><a href="/php/logout-user.php">Logout</a></button>
     <button type="button" class="btn btn-light"><a href="/contact/index.html">contact us</a></button>
     <button type="button" class="btn btn-light"><a href="/aboutus/Aboutus.html">contact us</a></button>
     </nav>
